@@ -90,7 +90,7 @@ button.btn {
 }
 
 .p__color {
-  color: rgba(198, 201, 216, .75);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   line-height: 30px;
   font-family: Poppins, sans-serif;
@@ -98,7 +98,7 @@ button.btn {
 }
 
 button.about.btn.pointer:hover {
-  background: #fff;
+  background: rgb(95, 64, 64);
   color: #000 !important;
 }
 
@@ -106,4 +106,14 @@ button.about.btn.pointer:hover {
     .col__2 {
      max-width: 100%;
     }
+}
+
+.col__3 {
+  max-width: 55.333333%;
+  display: flex;
+  padding: 1px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 500px;
 }
