@@ -17,7 +17,7 @@
 }
 
 .Navbar>.nav-items>a:hover{
-    color: #dd14ab;
+    color: #f83f46;
     transition: 1s;
     
 }
@@ -33,7 +33,7 @@
     bottom: 0;
     width: 0;
     height: 3px;
-    background: #aa00f9;
+    background: #f83f46;
 }
 
 .Navbar>.nav-items>a:hover::before{
@@ -128,6 +128,9 @@
     }
 }
 
+.home{
+    height: 100vh ;
+}
 .home__bg {
     background-image: url(../../img/wave.svg);
     background-color: #ffffff;
@@ -148,12 +151,13 @@ h2.content{
     font-size: 50px;
     line-height: 1.3;
     letter-spacing: 3px;
+    transition: opacity 1 0.42s;
 }
 
 h2.content span{
     font-size: 50px;
     font-weight: 900;
-    color: rgb(255, 78, 78);
+    color: #f83f46;
     letter-spacing: 0 !important;
     z-index: 1000;
 }
@@ -177,3 +181,36 @@ h2.content span{
 }
 
 
+@media only screen and (max-width: 768px) {
+    .header{
+        justify-content: space-between;
+    }
+    h2.content{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    h2.content span{
+        font-size: 30px;
+        font-weight: 900;
+        color: #f83f46;
+        letter-spacing: 0 !important;
+    }
+
+    .home__meta{
+        padding-right: revert;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    h2.content{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    h2.content span{
+        font-size: 30px;
+        font-weight: 900;
+        color: #f83f46;
+        letter-spacing: 0 !important;
+    }
+}

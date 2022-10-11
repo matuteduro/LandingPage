@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import rocket from '../../img/rocket.png'
+import wave3 from '../../img/wave3.svg'
 import { AnimateSharedLayout, motion } from "framer-motion"
 
 
@@ -14,7 +15,7 @@ function Home() {
     <div className='home' id='Home'>
         <div className='home__bg'>
             <div className='header Navbar'>
-                <h1 className='title'>Durodev</h1>
+                <h1 className='title'></h1>
                 <div className={`nav-items ${isOpen && "open"}`} >
                     <a href='/home'>Home</a>
                     <a href='/about'>About</a>
@@ -30,12 +31,17 @@ function Home() {
                 <div className="container">
                     <div className="home__content">
                         <div className="home__meta">
-                            <h2 className='content'>
+                            <motion.h2 
+                                initial={{ opacity: 0, }}
+                                animate={{ opacity: 1, }}
+                                transition={{ delay: 3 }}
+                                className='content'>
                                 Welcome to
                                 <br />
                                 <span> Rocket</span>
+                                </motion.h2>
                                 <motion.img   
-                                    animate={{ opacity: 1, x: 200, y:-250}}
+                                    animate={{ opacity: 1, x: 250, y:-250}}
                                     initial={{ opacity: 0, x:-200}}
                                     transition={{ type: "spring", stiffness: 10 }} 
                                     className='rocket' 
@@ -43,7 +49,6 @@ function Home() {
                                     alt=''
                                     id='rocket' 
                                 />
-                            </h2>
                         </div>
                     </div>
                 </div>
