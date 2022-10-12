@@ -15,14 +15,15 @@ h1.heading {
  .detail__box {
     border-radius: 10px;
     width: 100%;
-    background-color: #f83f46;
-    padding: 55px;
+    height: fit-content;
+    background-color: #3faef8;
+    padding: 10px;
     transition: .4s ease;
  }
 
  .detail__box:hover {
     transform: translateY(5px);
-    background-image: linear-gradient(90deg, #f83f46, #f83f46);
+    background-image: linear-gradient(90deg, #3f95f8, #3fbef8);
  }
 
  .detail__box:hover .icon {
@@ -51,17 +52,17 @@ h1.heading {
     padding: 10px 0px;
  }
 
- @media only screen and (max-width: 1024px) {
-      .detail__box {
-        padding: 32px;
-      }
+ @media only screen and (max-width: 765px) {
+   #stand{
+      display: none;
+    }
+   .row__detail{
+      display: flex;
+      flex-direction: column;
+   }
  }
 
- .stand{
-    height: 80vh;
-    position: absolute;
-    margin-left: -50px;
- }
+
 
 .detail{
    background-image: url(../../img/wave4.svg);
@@ -69,4 +70,18 @@ h1.heading {
    background-position: 50%;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+.container__detail{
+   width: 80%;
+   margin: 0px auto;
+
+}
+.stand{
+   width: 50%;
+ }
+
+.column__detail{
+   display: flex;
+   flex-direction: row;
 }

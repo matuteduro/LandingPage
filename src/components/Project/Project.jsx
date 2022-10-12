@@ -15,13 +15,14 @@ const Project = () => {
             <br />
         </div>
         <div className='container'>
-            <div className='column'>
+            <div className='column__project'>
                 <div className='col__4'>
             <motion.img
                             src={earn}
                             className='earn__img'
                             alt=""
                             data-aos="fade-up"
+                            data-aos-once="false"
                         />
                     <div className='project__box pointer relative'>
                         <div className='project__box__img pointer relative'>

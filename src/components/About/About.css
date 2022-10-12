@@ -1,14 +1,13 @@
 .about {
-    background-image: url(../../img/wave2.svg);
+    background-image: url(../../img/wave2.png);
     background-color: #ffffff;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-img.about__img {
-    border-radius: 10px;
-    width: 100%;
+.about__img {
+    width: 50%;
 }
 
 h1.about__heading {
@@ -34,7 +33,7 @@ button.about.btn.pointer {
 a.bottom__to__top {
     height: 40px;
     width: 40px;
-    position: fixed;
+    position: fixed; 
     bottom: 5%;
     right: 2%;
     background: #F9004D;
@@ -52,9 +51,8 @@ a.bottom__to__top.active {
 }
 
 .about__text{
-    color: rgb(12, 11, 11);
+    color: rgb(255, 253, 253);
     font-size: 20px;
-    border:  1px solid;
 }
 
 @media only screen and (max-width: 768px) {

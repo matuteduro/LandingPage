@@ -8,8 +8,7 @@ import Aos from 'aos'
 
 function App() {
   Aos.init({
-    duration: 1800,
-    offset: 100,
+    once: false
   })
   return (
     <div className="App">

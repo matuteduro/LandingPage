@@ -1,6 +1,6 @@
 import React from 'react'
 import './Detail.css'
-import stand from '../../img/stand.png'
+import stand from '../../img/stand2.png'
 import { motion } from 'framer-motion'
 
 const Detail = () => {
@@ -15,9 +15,18 @@ const Detail = () => {
                 Start investing now
             </p>
         </div>
-        <div className='container'>
-            <div className='row'>
-                <div className='col__3' data-aos="fade-left">
+        <div className='container__detail'>
+            <div className='column__detail'>
+        <motion.img 
+                    src={stand} 
+                    className='stand' 
+                    id='stand'
+                    data-aos="fade-right"
+                    data-aos-once="false"
+                    alt="" 
+                />
+            <div className='row__detail'>
+                <div className='col__3' >
                     <div className='detail__box pointer'>
                         <div className='icon'>
                         <svg
@@ -45,7 +54,7 @@ const Detail = () => {
                     </div>
                     
                 </div>
-                <div className='col__3' data-aos="fade-left">
+                <div className='col__3' id='col2' >
                     <div className='detail__box pointer'>
                         <div className='icon'>
                         <svg
@@ -73,13 +82,7 @@ const Detail = () => {
                     </div>
                     
                 </div>
-                <motion.img 
-                    src={stand} 
-                    className='stand' 
-                    data-aos="fade-right"
-                    data-aos-delay="500"
-                    alt="" 
-                />
+            </div>
             </div>
         </div>
     </div>

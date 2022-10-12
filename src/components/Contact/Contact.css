@@ -5,17 +5,17 @@
     z-index: -1;
 }
 
-.contactrow{
+.contact__row{
     background-image: url(../../img/clouds.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1.hire__text {
-    font-size: 60px;
+    font-size: 40px;
 }
 p.hire__text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     color: rgba(29, 29, 36, .75);
     font-weight: 400;
@@ -23,7 +23,6 @@ p.hire__text {
 
 input.contact {
     display: block;
-    width: 100%;
     padding: 0 20px;
     border: 2px solid rgba(0,0,0, .1);
     border-radius: 5px;
@@ -34,7 +33,7 @@ input.contact {
     margin: 20px 0px;
     outline: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: .1px;
     background: none;
     border: 2px solid hsla(0, 0%, 100%, .2);
@@ -73,7 +72,7 @@ button.view__more:hover {
   }
 
 .contact__img{
-    width: 44%;
+    width: 50%
 }
 
 .contact__box{
@@ -81,8 +80,32 @@ button.view__more:hover {
     opacity: .7;
     text-shadow: 1px 1px white;
     height: 50%;
+    margin: 20px;
     padding: 20px;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 50px;
     
 }
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.icons{
+    height: fit-content;
+    size: 200px;
+}
+
+@media only screen and (max-width: 765px) {
+    .contact__img{
+       display: none;
+     }
+    .row__detail{
+       display: flex;
+       flex-direction: column;
+    }
+  }

@@ -36,23 +36,25 @@ function Home() {
                                 transition={{ delay: 3 }}
                                 className='content'>
                                 Welcome to
-                                <br />
                                 <span> Rocket</span>
                                 </motion.h2>
                                 <motion.img   
-                                    animate={{ opacity: 1, x: 250, y:-250}}
-                                    initial={{ opacity: 0, x:-200}}                  
+                                    animate={{ opacity: 1, x: 0, y:0}}
+                                    initial={{ opacity: 0, x:-700, y:500}}                  
                                     transition={{ type: "spring", stiffness: 10 }} 
-                                    className='rocket' 
+                                    className='rocket'
+                                    data-aos="fade-down"
+                                    data-aos-once="true"
                                     src={rocket} 
                                     alt=''
                                     id='rocket' 
                                 />
+                                <img src={rocket} className='mobileImg' id="mobile"/>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
+    </div>
   )
 }
 

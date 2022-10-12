@@ -55,16 +55,12 @@ p{
 
 
 .col__2{
-  max-width: 50%;
   display: flex;
   padding: 20px;
   justify-content: center;
   flex-direction: column;
 }
 
-.component__space{
-  padding: 100px 0;
-}
 
 .pointer{
   cursor: pointer;
@@ -105,21 +101,19 @@ button.about.btn.pointer:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .col__2 {
-     max-width: 100%;
-    }
+
 }
 
 .col__3 {
   display: flex;
   padding: 1px;
-  margin-top: 20px;
-  margin-left: 500px;
+  font-size: 18px;
 }
 
 .col__4 {
   display: flex;
   justify-content: space-evenly;
+
 
 }
 
@@ -132,9 +126,6 @@ button.about.btn.pointer:hover {
 
 }
 
-.component__space{
-  padding: 100px 0px;
-}
 
 .relative{
   position: relative;
@@ -145,16 +136,12 @@ button.about.btn.pointer:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .col__3 {
-   max-width: 50%;
-  }
+
   
 }
 
 @media only screen and (max-width: 425px) {
-.col__3 {
- max-width: 100%;
-}
+
 
 }
 

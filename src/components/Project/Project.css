@@ -1,5 +1,5 @@
 .project{
-    background-image: url(../../img/wave5.svg);
+    background-image: url(../../img/wave5.png);
     background-color: #ffffff;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -119,5 +119,5 @@ img.project__img {
 }
 
 .earn__img{
-   width: 43%;
+   width: 50%;
 }
