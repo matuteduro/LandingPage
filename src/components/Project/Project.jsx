@@ -8,10 +8,10 @@ import { motion } from 'framer-motion'
 
 const Project = () => {
   return (
-    <div className='project component__space' id='project'>
+    <div className='project component__space' id='Project'>
         <div className='heading'>
-            <h1 className='heading'>We do it for you</h1>
-            <p className='heading p__color'>Our team is ready to seek for your new opportunities</p>
+            <h1 className='heading' data-aos="flip-in">We do it for you</h1>
+            <p className='heading p__color' data-aos="fade-up">Our team is ready to seek for your new opportunities</p>
             <br />
         </div>
         <div className='container'>
@@ -21,9 +21,7 @@ const Project = () => {
                             src={earn}
                             className='earn__img'
                             alt=""
-                            animate={{ opacity: 1, y: 100 }}
-                            initial={{ opacity: 0, y: -1000 }}
-                            transition={{ type: "spring", stiffness: 10 }}
+                            data-aos="fade-up"
                         />
                     <div className='project__box pointer relative'>
                         <div className='project__box__img pointer relative'>

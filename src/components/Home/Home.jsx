@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import rocket from '../../img/rocket.png'
-import wave3 from '../../img/wave3.svg'
-import { AnimateSharedLayout, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 function Home() {
@@ -17,11 +16,11 @@ function Home() {
             <div className='header Navbar'>
                 <h1 className='title'></h1>
                 <div className={`nav-items ${isOpen && "open"}`} >
-                    <a href='/home'>Home</a>
-                    <a href='/about'>About</a>
-                    <a href='/'>Portfolio</a>
-                    <a href='/'>Service</a>
-                    <a href='/contact'>Contact</a>
+                    <a href='#home'>Home</a>
+                    <a href='#About'>About</a>
+                    <a href='#Detail'>Detail</a>
+                    <a href='#Project'>Service</a>
+                    <a href='#Contact'>Contact</a>
                 </div>
                 <div className={`nav-toggle ${isOpen && "open"}`} 
                 onClick={() => setIsOpen(!isOpen)} >
@@ -42,7 +41,7 @@ function Home() {
                                 </motion.h2>
                                 <motion.img   
                                     animate={{ opacity: 1, x: 250, y:-250}}
-                                    initial={{ opacity: 0, x:-200}}
+                                    initial={{ opacity: 0, x:-200}}                  
                                     transition={{ type: "spring", stiffness: 10 }} 
                                     className='rocket' 
                                     src={rocket} 

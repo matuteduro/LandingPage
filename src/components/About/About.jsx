@@ -19,13 +19,13 @@ const About = () => {
                         <motion.img
                             src={aboutImg}
                             className='about__img'
+                            data-aos="fade-down"
                             alt=""
-                            animate={{ opacity: 1, y: 100 }}
-                            initial={{ opacity: 0, y: -1000 }}
-                            transition={{ type: "spring", stiffness: 10 }}
+                            animate={{ y: 100 }}
+                            initial={{ y: -1000 }}
                         />
                     </div>
-                    <div className='col__2'>
+                    <div className='col__2' data-aos="fade-left">
                         <h1 className='about__heading'>About Me</h1>
                         <div className='about__meta'>
                             <p className='about__text p__color'>

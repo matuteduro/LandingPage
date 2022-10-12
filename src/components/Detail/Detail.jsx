@@ -7,7 +7,7 @@ const Detail = () => {
   return (
     <div className='detail component__space' id='Detail'>
         <div className='heading'>
-            <h1 className='heading'>What We Offer</h1>
+            <h1 className='heading' data-aos="zoom-in">What We Offer</h1>
             <p className='heading p__color'>
                 There are multiply options of what we can do for you
             </p>
@@ -17,7 +17,7 @@ const Detail = () => {
         </div>
         <div className='container'>
             <div className='row'>
-                <div className='col__3'>
+                <div className='col__3' data-aos="fade-left">
                     <div className='detail__box pointer'>
                         <div className='icon'>
                         <svg
@@ -35,7 +35,7 @@ const Detail = () => {
                   <line x1="2" y1="20" x2="2" y2="20"></line>
                 </svg>
                         </div>
-                        <div className='detail__meta'>
+                        <div className='detail__meta' >
                             <h1 className='detail__text'>Business Strategy</h1>
                             <p className='p detail__text p__color'>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, mollitia beatae! Officia, repudiandae praesentium. Maiores molestias quae quam harum optio quasi debitis neque unde culpa ullam, modi velit, voluptates aliquam.
@@ -45,7 +45,7 @@ const Detail = () => {
                     </div>
                     
                 </div>
-                <div className='col__3'>
+                <div className='col__3' data-aos="fade-left">
                     <div className='detail__box pointer'>
                         <div className='icon'>
                         <svg
@@ -76,10 +76,9 @@ const Detail = () => {
                 <motion.img 
                     src={stand} 
                     className='stand' 
+                    data-aos="fade-right"
+                    data-aos-delay="500"
                     alt="" 
-                    animate={{ opacity: 1, x:0}}
-                    initial={{ opacity: 0, x:-700}}
-                    transition={{ type: "spring", duration: 5 }} 
                 />
             </div>
         </div>

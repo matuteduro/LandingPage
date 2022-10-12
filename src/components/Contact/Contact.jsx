@@ -7,7 +7,7 @@ function Contact() {
          <div className="contact component__spac" id="Contact">
             <div className="contactrow">
                 <div className="col__4">
-                    <div className="contact__box">
+                    <div className="contact__box" data-aos="fade-right">
                         <div className="contact__meta">
                             <h1 className="hire__text">Did you like it?</h1>
                             <h2 className="hire__text white">
@@ -25,7 +25,7 @@ function Contact() {
                             <button className="view__more contact pointer btn">Submit</button>
                         </div>
                     </div>
-                    <img src={contactimg} alt='' className="contact__img" />
+                    <img src={contactimg} alt='' className="contact__img" data-aos="fade-left" data-aos-delay="1000"/>
                 </div>
             </div>
          </div>
