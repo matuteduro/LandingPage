@@ -119,6 +119,7 @@ button.about.btn.pointer:hover {
 
 .col__4 {
   display: flex;
+  justify-content: space-evenly;
 
 }
 
