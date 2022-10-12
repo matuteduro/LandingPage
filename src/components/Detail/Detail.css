@@ -62,3 +62,11 @@ h1.heading {
     position: absolute;
     margin-left: -50px;
  }
+
+.detail{
+   background-image: url(../../img/wave4.svg);
+   background-color: #ffffff;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
